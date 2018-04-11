@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/akeneo/docker-ansible.svg?branch=master)](https://travis-ci.org/akeneo/docker-ansible)
 
-This repository contains the Ansible Dockerfile to be used for development/testing. Please do not use them for a production environment. Feel free to use/adapt them if they fit your needs.
+This repository contains the Ansible Dockerfile to be used for development/testing. Please do not use them for a production environment. Feel free to use/adapt them for your needs
 
 ## How to use this image
 
