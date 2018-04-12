@@ -11,6 +11,14 @@ And even if you are not new, it is a good start to understand how these images a
 
 To know how to add tests, please read [this documentation](https://github.com/akeneo/Dockerfiles/blob/master/Docs/testing.md).
 
+Otherwise, here is the way to use this image:
+
+```bash
+docker run -it -d -v path-to-your-key:/root/.ssh/id_rsa -v path-to-your-key.pub:/root/.ssh/id_rsa.pub --name ansible akeneo/ansible:2.5
+```
+
+And then you can run the commands you want.
+
 ## License
 
 This content of this repository is under the MIT license. See the complete license in the [LICENSE](https://github.com/akeneo/docker-ansible/blob/master/LICENSE) file.
