@@ -1,7 +1,10 @@
 #!/bin/bash
 
 eval $(ssh-agent)
-ssh-add ~/.ssh/id_rsa
+
+if [ -f ~/.ssh/id_rsa ]; then
+    ssh-add ~/.ssh/id_rsa
+fi
 
 echo "export SSH_AGENT_PID=$SSH_AGENT_PID" >> ~/.bashrc
 echo "export SSH_AUTH_SOCK=$SSH_AUTH_SOCK" >> ~/.bashrc
